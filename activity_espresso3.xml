@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".espresso3">
+
+
+    <!-- 와 -->
+
+    <TextView
+        android:id="@+id/maintitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/grind_num"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="124dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="0.5"
+        android:textSize='25sp'
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/grind_up"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/grind_num"
+        app:layout_constraintTop_toTopOf="@+id/grind_num"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <ImageButton
+        android:id="@+id/grind_down"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/grind_num"
+        app:layout_constraintTop_toBottomOf="@+id/grind_up"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <EditText
+        android:id="@+id/coffee_num"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:textSize='25sp'
+        android:background="@null"
+        android:text="0.5"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/grind_up"
+        app:layout_constraintTop_toTopOf="@+id/grind_num" />
+
+    <ImageButton
+        android:id="@+id/coffee_up"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/coffee_num"
+        app:layout_constraintTop_toTopOf="@+id/coffee_num"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <ImageButton
+        android:id="@+id/coffee_down"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/coffee_num"
+        app:layout_constraintTop_toBottomOf="@+id/coffee_up"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <EditText
+        android:id="@+id/water_num"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:textSize='25sp'
+        android:background="@null"
+        android:text="0.5"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/coffee_up"
+        app:layout_constraintTop_toTopOf="@+id/coffee_num" />
+
+    <ImageButton
+        android:id="@+id/water_up"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/water_num"
+        app:layout_constraintTop_toTopOf="@+id/water_num"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <ImageButton
+        android:id="@+id/water_down"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/water_num"
+        app:layout_constraintTop_toBottomOf="@+id/water_up"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <EditText
+        android:id="@+id/time_num"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:textSize='25sp'
+        android:background="@null"
+        android:text="0.5"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/water_up"
+        app:layout_constraintTop_toTopOf="@+id/water_num" />
+
+    <ImageButton
+        android:id="@+id/time_up"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/time_num"
+        app:layout_constraintTop_toTopOf="@+id/time_num"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <ImageButton
+        android:id="@+id/time_down"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/time_num"
+        app:layout_constraintTop_toBottomOf="@+id/time_up"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <EditText
+        android:id="@+id/aci_num"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="244dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:text="0.5"
+        android:textSize='25sp'
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/aci_up"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/aci_num"
+        app:layout_constraintTop_toTopOf="@+id/aci_num"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <ImageButton
+        android:id="@+id/aci_down"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/aci_num"
+        app:layout_constraintTop_toBottomOf="@+id/aci_up"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <EditText
+    android:id="@+id/sw_num"
+    android:layout_width="50dp"
+    android:layout_height="38dp"
+    android:layout_marginTop="20dp"
+    android:background="@null"
+    android:ems="10"
+    android:gravity="center"
+    android:inputType="numberDecimal"
+    android:text="0.5"
+    android:textSize='25sp'
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="@+id/aci_num"
+    app:layout_constraintTop_toBottomOf="@+id/aci_num" />
+
+    <ImageButton
+        android:id="@+id/sw_up"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/sw_num"
+        app:layout_constraintTop_toTopOf="@+id/sw_num"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <ImageButton
+        android:id="@+id/sw_down"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/sw_num"
+        app:layout_constraintTop_toBottomOf="@+id/sw_up"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <EditText
+        android:id="@+id/bt_num"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:text="0.5"
+        android:textSize='25sp'
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/sw_num"
+        app:layout_constraintTop_toBottomOf="@+id/sw_num" />
+
+    <ImageButton
+        android:id="@+id/bt_up"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/bt_num"
+        app:layout_constraintTop_toTopOf="@+id/bt_num"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <ImageButton
+        android:id="@+id/bt_down"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/bt_num"
+        app:layout_constraintTop_toBottomOf="@+id/bt_up"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="144dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <EditText
+        android:id="@+id/simple_comment"
+        android:layout_width="155dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="276dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="simple_comment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+
+</android.support.constraint.ConstraintLayout>

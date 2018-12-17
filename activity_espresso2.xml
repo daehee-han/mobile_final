@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".espresso2">
+
+    <EditText
+        android:id="@+id/bt_d"
+        android:layout_width="59dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="32dp"
+        android:textSize="12sp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/bt_ed"
+        app:layout_constraintTop_toBottomOf="@+id/sw_d" />
+
+    <EditText
+        android:id="@+id/sw_d"
+        android:layout_width="59dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:textSize="13sp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/sw_ed"
+        app:layout_constraintTop_toBottomOf="@+id/aci_d" />
+
+    <EditText
+        android:id="@+id/aci_d"
+        android:layout_width="59dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:textSize="12sp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/aci_ed"
+        app:layout_constraintTop_toBottomOf="@+id/grinder_num" />
+
+    <EditText
+        android:id="@+id/bt_st"
+        android:layout_width="59dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:textSize="12sp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_st" />
+
+    <EditText
+        android:id="@+id/bt_ed"
+        android:layout_width="59dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:textSize="12sp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/bt_st"
+        app:layout_constraintTop_toBottomOf="@+id/sw_ed" />
+
+    <EditText
+        android:id="@+id/aci_st"
+        android:layout_width="59dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="32dp"
+        android:textSize="12sp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grinder_num" />
+
+    <EditText
+        android:id="@+id/sw_ed"
+        android:layout_width="59dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:textSize="12sp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/sw_st"
+        app:layout_constraintTop_toBottomOf="@+id/aci_ed" />
+
+    <EditText
+        android:id="@+id/aci_ed"
+        android:layout_width="59dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:textSize="12sp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/aci_st"
+        app:layout_constraintTop_toBottomOf="@+id/grinder_num" />
+
+    <EditText
+        android:id="@+id/sw_st"
+        android:layout_width="59dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:textSize="12sp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aci_st" />
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="64dp"
+        android:textSize="12sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/machine_text"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/roasting_text"
+        app:layout_constraintTop_toBottomOf="@+id/roasting_text" />
+
+    <EditText
+        android:id="@+id/grinder_text"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/machine_text"
+        app:layout_constraintTop_toBottomOf="@+id/machine_text" />
+
+    <EditText
+        android:id="@+id/grinder_num"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/grinder_text"
+        app:layout_constraintTop_toBottomOf="@+id/grinder_text" />
+
+    <ImageButton
+        android:id="@+id/create_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="52dp"
+        android:privateImeOptions="defaultInputmode=korean"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <EditText
+        android:id="@+id/roasting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/name_text"
+        app:layout_constraintTop_toBottomOf="@+id/name_text" />
+</android.support.constraint.ConstraintLayout>
